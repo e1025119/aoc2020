@@ -14,6 +14,7 @@ def ways_sum(idx):
     if isinstance(ways[idx], int):
         return ways[idx]
     else:
+        print(ways[idx])
         cnt = 0
         for x in ways[idx]:
             cnt += ways_sum(x)
